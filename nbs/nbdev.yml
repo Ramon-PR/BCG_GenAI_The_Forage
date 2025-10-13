@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "BCG_GenAI_The_Forage"
+  site-url: "https://Ramon-PR.github.io/BCG_GenAI_The_Forage"
+  description: "Job Simulation from the Forage for BCG GenAI - AI-powered financial chatbot"
+  repo-branch: main
+  repo-url: "https://github.com/Ramon-PR/BCG_GenAI_The_Forage"
