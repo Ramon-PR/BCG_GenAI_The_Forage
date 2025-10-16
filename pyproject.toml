@@ -8,7 +8,9 @@ version = "0.1.0"
 description = "Repo where we will implement an AI chatbot trained with financial data obtained through scrapping"
 readme = "README.md"
 requires-python=">=3.9"
-dependencies = []
+dependencies = [
+    "nbdev>=2.4.6",
+]
 
 [tool.uv.workspace]
 members = [
