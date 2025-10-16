@@ -1,0 +1,162 @@
+[
+  {
+    "objectID": "scrap_edgar_data.html",
+    "href": "scrap_edgar_data.html",
+    "title": "Get Financial data for data analysis",
+    "section": "",
+    "text": "Scrapping EDGAR data",
+    "crumbs": [
+      "Get Financial data for data analysis"
+    ]
+  },
+  {
+    "objectID": "scrap_edgar_data.html#step-1-data-extraction",
+    "href": "scrap_edgar_data.html#step-1-data-extraction",
+    "title": "Get Financial data for data analysis",
+    "section": "Step 1: Data extraction",
+    "text": "Step 1: Data extraction\n\nNavigate to the SEC’s EDGAR database:\n\nMicrosoft\n\nTesla\n\nApple\n\n\n\nManual extraction:\n\nFor each company, find the 10-K filings for the last three fiscal years.\n\nExtract the following financial figures: Total Revenue, Net Income, Total Assets, Total Liabilities, and Cash Flow from Operating Activities.\n\n\n\nOrganize Your Data:\n\nCompile the extracted data into an Excel spreadsheet for easy reference during your Python analysis.",
+    "crumbs": [
+      "Get Financial data for data analysis"
+    ]
+  },
+  {
+    "objectID": "scrap_edgar_data.html#step-2-preparing-your-jupyter-notebook-environment",
+    "href": "scrap_edgar_data.html#step-2-preparing-your-jupyter-notebook-environment",
+    "title": "Get Financial data for data analysis",
+    "section": "Step 2: Preparing your Jupyter Notebook environment",
+    "text": "Step 2: Preparing your Jupyter Notebook environment\nInstall Jupyter (if not already installed):\nInstall Jupyter using pip if you haven’t already: &gt; pip install notebook\n\nLaunch Jupyter Notebook: &gt; jupyter notebook\nThis command should open Jupyter in your web browser.\n\n\nCreate a new notebook:\nIn the Jupyter interface, create a new notebook for your analysis.",
+    "crumbs": [
+      "Get Financial data for data analysis"
+    ]
+  },
+  {
+    "objectID": "scrap_edgar_data.html#step-3-python-analysis-in-jupyter",
+    "href": "scrap_edgar_data.html#step-3-python-analysis-in-jupyter",
+    "title": "Get Financial data for data analysis",
+    "section": "Step 3: Python analysis in Jupyter",
+    "text": "Step 3: Python analysis in Jupyter\n\nImport pandas:\nAt the beginning of your notebook, import the pandas library to work with your data. &gt; import pandas as pd\n\n\nLoad your data:\n\nConvert your Excel file to a CSV file for easier handling, then load it into a DataFrame. &gt; df = pd.read_csv(‘path_to_your_csv_file.csv’)\n\n\n\nAnalyzing trends with pandas:\n\nUse pandas to calculate year-over-year changes for each financial metric. You can do this by creating new columns in your DataFrame that represent the percentage change from one year to the next.\n\n\ndf[‘Revenue Growth (%)’] = df.groupby([‘Company’])[‘Total Revenue’].pct_change() * 100 df[‘Net Income Growth (%)’] = df.groupby([‘Company’])[‘Net Income’].pct_change() * 100\n\n\nExplore other aggregate functions or groupings to analyze the data across different dimensions (by company, over years, etc.).\n\n\n\nSummarizing findings:\n\nConclude your analysis by summarizing your findings directly in the notebook. Use markdown cells to add narrative explanations of your analysis, discussing the trends and changes in financial metrics you’ve identified.",
+    "crumbs": [
+      "Get Financial data for data analysis"
+    ]
+  },
+  {
+    "objectID": "scrap_edgar_data.html#step-4-documentation-and-submission",
+    "href": "scrap_edgar_data.html#step-4-documentation-and-submission",
+    "title": "Get Financial data for data analysis",
+    "section": "Step 4: Documentation and submission",
+    "text": "Step 4: Documentation and submission\n\nDocument your analysis: Use the markdown feature in Jupyter Notebook to document your methodology, observations, and conclusions throughout the notebook.\nExport your notebook: Once your analysis is complete, export your Jupyter Notebook as a PDF or HTML file for submission.\n\nYou can do this from the “File” menu in Jupyter, selecting “Download as” and then choosing your preferred format.\n\n\nThis approach allows you to focus on the core analytical aspects using pandas within a Jupyter Notebook, providing a clear, documented narrative of your financial analysis process. By the end of this task, you’ll have a comprehensive understanding of how to analyze financial data programmatically, a valuable skill set for data-driven decision-making.",
+    "crumbs": [
+      "Get Financial data for data analysis"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "BCG_GenAI_The_Forage",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation.",
+    "crumbs": [
+      "BCG_GenAI_The_Forage"
+    ]
+  },
+  {
+    "objectID": "index.html#developer-guide",
+    "href": "index.html#developer-guide",
+    "title": "BCG_GenAI_The_Forage",
+    "section": "Developer Guide",
+    "text": "Developer Guide\nIf you are new to using nbdev here are some useful pointers to get you started.\n\nInstall BCG_GenAI_The_Forage in Development mode\n# make sure BCG_GenAI_The_Forage package is installed in development mode\n$ pip install -e .\n\n# make changes under nbs/ directory\n# ...\n\n# compile to have changes apply to BCG_GenAI_The_Forage\n$ nbdev_prepare",
+    "crumbs": [
+      "BCG_GenAI_The_Forage"
+    ]
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "BCG_GenAI_The_Forage",
+    "section": "Usage",
+    "text": "Usage\n\nInstallation\nInstall latest from the GitHub repository:\n$ pip install git+https://github.com/Ramon-PR/BCG_GenAI_The_Forage.git\nor from conda\n$ conda install -c Ramon-PR BCG_GenAI_The_Forage\nor from pypi\n$ pip install BCG_GenAI_The_Forage\n\n\nDocumentation\nDocumentation can be found hosted on this GitHub repository’s pages. Additionally you can find package manager specific guidelines on conda and pypi respectively.",
+    "crumbs": [
+      "BCG_GenAI_The_Forage"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "BCG_GenAI_The_Forage",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2",
+    "crumbs": [
+      "BCG_GenAI_The_Forage"
+    ]
+  },
+  {
+    "objectID": "load_financial_data.html",
+    "href": "load_financial_data.html",
+    "title": "Load data / Manually input the data",
+    "section": "",
+    "text": "path_to_data = Path(\"../resources\")\nCreation of the csv file\n# columns = [\"Company\", \"Year\",\n#             \"Total Revenue\", \"Net Income\", \n#             \"Total Assets\", \"Total Liabilities\", \n#             \"Cash Flow from Operations\"]\n# df = pd.DataFrame(columns=columns)\n# df.to_csv(path_to_data/\"financial_data.csv\", index=False)\nImport csv into pandas\nfile=path_to_data/\"financial_data.csv\"\ndf = pd.read_csv(file)\ndf.head()\n\n\n\n\n\n\n\n\nCompany\nYear\nTotal Revenue\nNet Income\nTotal Assets\nTotal Liabilities\nCash Flow from Operations\n\n\n\n\n0\nMicrosoft\n2025\n281724\n101832\n619003\n275524\n136162\n\n\n1\nMicrosoft\n2024\n245122\n88136\n512163\n243686\n118548\n\n\n2\nMicrosoft\n2023\n211915\n72361\n411976\n205753\n87582\n\n\n3\nApple\n2024\n391035\n93736\n364980\n308030\n118254\n\n\n4\nApple\n2023\n383285\n96995\n352583\n290437\n110543",
+    "crumbs": [
+      "Load data / Manually input the data"
+    ]
+  },
+  {
+    "objectID": "load_financial_data.html#percentage-of-change-of-each-financial-fact",
+    "href": "load_financial_data.html#percentage-of-change-of-each-financial-fact",
+    "title": "Load data / Manually input the data",
+    "section": "Percentage of change of each financial fact",
+    "text": "Percentage of change of each financial fact\nOrder by company and ascending year, for tools like .pct_change() whose operations operates in rows such as:\n&gt; \\((row_{i+1}- row_{i}) / row_{i}\\)\n\ndf.sort_values(by=[\"Company\", \"Year\"], inplace=True, ascending=[True, True])\ndf\n\n\n\n\n\n\n\n\nCompany\nYear\nTotal Revenue\nNet Income\nTotal Assets\nTotal Liabilities\nCash Flow from Operations\n\n\n\n\n5\nApple\n2022\n394328\n99803\n352755\n302083\n122151\n\n\n4\nApple\n2023\n383285\n96995\n352583\n290437\n110543\n\n\n3\nApple\n2024\n391035\n93736\n364980\n308030\n118254\n\n\n2\nMicrosoft\n2023\n211915\n72361\n411976\n205753\n87582\n\n\n1\nMicrosoft\n2024\n245122\n88136\n512163\n243686\n118548\n\n\n0\nMicrosoft\n2025\n281724\n101832\n619003\n275524\n136162\n\n\n8\nTesla\n2022\n81462\n12587\n82338\n36440\n14724\n\n\n7\nTesla\n2023\n96773\n14974\n106618\n43009\n13256\n\n\n6\nTesla\n2024\n97690\n7153\n122070\n48390\n14923\n\n\n\n\n\n\n\nThe percentage change has to be applied to all the facts (all columns except Company and Year)\n\ncols_to_change = df.columns.difference(['Company', 'Year'])\ncols_to_change\n\nIndex(['Cash Flow from Operations', 'Net Income', 'Total Assets',\n       'Total Liabilities', 'Total Revenue'],\n      dtype='object')\n\n\nTo avoid applying the method co rows of different companies, groupby Company\n\npct_change_df = df.groupby(\"Company\")[cols_to_change].pct_change() * 100\n# Add suffix to the new columns to indicate they are growth percentages\npct_change_df = pct_change_df.add_suffix(' growth (%)')",
+    "crumbs": [
+      "Load data / Manually input the data"
+    ]
+  },
+  {
+    "objectID": "load_financial_data.html#fill-na-values-that-result-from-pct_change-calculations-with-0-or-an-appropriate-value",
+    "href": "load_financial_data.html#fill-na-values-that-result-from-pct_change-calculations-with-0-or-an-appropriate-value",
+    "title": "Load data / Manually input the data",
+    "section": "Fill NA values that result from pct_change calculations with 0 or an appropriate value",
+    "text": "Fill NA values that result from pct_change calculations with 0 or an appropriate value\n\npct_change_df.fillna(0, inplace=True)\n\nWe can add the new columns to the original dataframe\n\ndf_with_growth = pd.concat([df, pct_change_df], axis=1)\ndf_with_growth\n\n\n\n\n\n\n\n\nCompany\nYear\nTotal Revenue\nNet Income\nTotal Assets\nTotal Liabilities\nCash Flow from Operations\nCash Flow from Operations growth (%)\nNet Income growth (%)\nTotal Assets growth (%)\nTotal Liabilities growth (%)\nTotal Revenue growth (%)\n\n\n\n\n5\nApple\n2022\n394328\n99803\n352755\n302083\n122151\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n\n\n4\nApple\n2023\n383285\n96995\n352583\n290437\n110543\n-9.502992\n-2.813543\n-0.048759\n-3.855232\n-2.800461\n\n\n3\nApple\n2024\n391035\n93736\n364980\n308030\n118254\n6.975566\n-3.359967\n3.516052\n6.057424\n2.021994\n\n\n2\nMicrosoft\n2023\n211915\n72361\n411976\n205753\n87582\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n\n\n1\nMicrosoft\n2024\n245122\n88136\n512163\n243686\n118548\n35.356580\n21.800417\n24.318650\n18.436183\n15.669962\n\n\n0\nMicrosoft\n2025\n281724\n101832\n619003\n275524\n136162\n14.858117\n15.539621\n20.860546\n13.065174\n14.932156\n\n\n8\nTesla\n2022\n81462\n12587\n82338\n36440\n14724\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n\n\n7\nTesla\n2023\n96773\n14974\n106618\n43009\n13256\n-9.970117\n18.964010\n29.488207\n18.026894\n18.795267\n\n\n6\nTesla\n2024\n97690\n7153\n122070\n48390\n14923\n12.575438\n-52.230533\n14.492862\n12.511335\n0.947578",
+    "crumbs": [
+      "Load data / Manually input the data"
+    ]
+  },
+  {
+    "objectID": "load_financial_data.html#optionally-you-could-summarize-these-findings-for-each-company",
+    "href": "load_financial_data.html#optionally-you-could-summarize-these-findings-for-each-company",
+    "title": "Load data / Manually input the data",
+    "section": "Optionally, you could summarize these findings for each company",
+    "text": "Optionally, you could summarize these findings for each company\n\ndf_with_growth.columns\n\nIndex(['Company', 'Year', 'Total Revenue', 'Net Income', 'Total Assets',\n       'Total Liabilities', 'Cash Flow from Operations',\n       'Cash Flow from Operations growth (%)', 'Net Income growth (%)',\n       'Total Assets growth (%)', 'Total Liabilities growth (%)',\n       'Total Revenue growth (%)'],\n      dtype='object')\n\n\n\nsummary = df_with_growth.groupby('Company').agg({\n    'Total Revenue growth (%)': 'mean',\n    'Net Income growth (%)': 'mean'\n}).reset_index()\n\nprint(\"\\nYear-over-Year Average Growth Rates (%):\")\nprint(summary)\n\n\nYear-over-Year Average Growth Rates (%):\n     Company  Total Revenue growth (%)  Net Income growth (%)\n0      Apple                 -0.259489              -2.057837\n1  Microsoft                 10.200706              12.446679\n2      Tesla                  6.580948             -11.088841",
+    "crumbs": [
+      "Load data / Manually input the data"
+    ]
+  },
+  {
+    "objectID": "load_financial_data.html#plot-the-percentage-of-change-of-the-financial-facts-accross-years",
+    "href": "load_financial_data.html#plot-the-percentage-of-change-of-the-financial-facts-accross-years",
+    "title": "Load data / Manually input the data",
+    "section": "Plot the percentage of change of the financial facts accross years",
+    "text": "Plot the percentage of change of the financial facts accross years\n\nfig, axs = plt.subplots(3,2, figsize=(10, 6))\n\nfor col in cols_to_change:\n    ax = axs.flatten()[cols_to_change.get_loc(col)]\n    sns.barplot(data=df_with_growth, x=\"Year\", y=f\"{col} growth (%)\", hue=\"Company\", ax=ax)\n    ax.legend(loc=\"upper left\")\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\n2023 was not a good financial year and companies like Apple and Tesla have negative growth in their Cash Flow from operations, and even in 2024 the consecuences of 2023 can be seen in the Net income growth and Total Revenue growth.\nBoth Tesla and Apple have their main business related to selling physical products, however Microsoft is specialised in software and their growth is stable for the current data.",
+    "crumbs": [
+      "Load data / Manually input the data"
+    ]
+  },
+  {
+    "objectID": "inspecting_sec_edgar_data.html",
+    "href": "inspecting_sec_edgar_data.html",
+    "title": "Getting the data through scraping",
+    "section": "",
+    "text": "Initiate a conda repo\n\nconda create -n my_env\n\nInstall the Python library to scrape data from SEC Edgar API\n\nuv add edgartools\n\nImport package\nSet your identity\n\nset_identity(\"Ramon Pozuelo rapozueloruiz@gmail.com\")\n\nNow you can import Companies\n\napple = Company(\"AAPL\")\n# apple\n\nGet the filing that we want (10 K of the previous year)\n\nfillings = apple.get_filings(form=\"10-K\", year=2024)\n# fillings = apple.get_filings(form=\"10-K\").latest()\n\nAccess the filing data\n\napple_latest_10K = fillings.latest()\napple_latest_10K\n\nTo donwload the filing content:\n\ntenk = apple_latest_10K.obj()\ntenk\n\nThe relevant information for the accounting is in : + Item 7 Management’s Discussion and Analysis (MD&A)\n\ntenk[\"Item 7\"]\n\n\napple.balance_sheet()\n\n\nmicrosoft = Company(\"MSFT\")\nmicrosoft.balance_sheet(as_dataframe=True)\n\n\ndf = microsoft.balance_sheet(as_dataframe=True)\n\n\ndf.head()",
+    "crumbs": [
+      "Getting the data through scraping"
+    ]
+  },
+  {
+    "objectID": "inspecting_sec_edgar_data.html#seting-up-the-tools",
+    "href": "inspecting_sec_edgar_data.html#seting-up-the-tools",
+    "title": "Getting the data through scraping",
+    "section": "",
+    "text": "Initiate a conda repo\n\nconda create -n my_env\n\nInstall the Python library to scrape data from SEC Edgar API\n\nuv add edgartools\n\nImport package\nSet your identity\n\nset_identity(\"Ramon Pozuelo rapozueloruiz@gmail.com\")\n\nNow you can import Companies\n\napple = Company(\"AAPL\")\n# apple\n\nGet the filing that we want (10 K of the previous year)\n\nfillings = apple.get_filings(form=\"10-K\", year=2024)\n# fillings = apple.get_filings(form=\"10-K\").latest()\n\nAccess the filing data\n\napple_latest_10K = fillings.latest()\napple_latest_10K\n\nTo donwload the filing content:\n\ntenk = apple_latest_10K.obj()\ntenk\n\nThe relevant information for the accounting is in : + Item 7 Management’s Discussion and Analysis (MD&A)\n\ntenk[\"Item 7\"]\n\n\napple.balance_sheet()\n\n\nmicrosoft = Company(\"MSFT\")\nmicrosoft.balance_sheet(as_dataframe=True)\n\n\ndf = microsoft.balance_sheet(as_dataframe=True)\n\n\ndf.head()",
+    "crumbs": [
+      "Getting the data through scraping"
+    ]
+  }
+]
