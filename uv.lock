@@ -8,7 +8,7 @@ resolution-markers = [
 
 [manifest]
 members = [
-    "bcg-genai-financial-jobsim",
+    "bcg-genai-the-forage",
     "nbs",
 ]
 
@@ -145,7 +145,7 @@ wheels = [
 ]
 
 [[package]]
-name = "bcg-genai-financial-jobsim"
+name = "bcg-genai-the-forage"
 version = "0.1.0"
 source = { editable = "." }
 

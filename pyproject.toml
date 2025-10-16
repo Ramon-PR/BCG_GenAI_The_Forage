@@ -3,11 +3,11 @@ requires = ["setuptools>=64.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "BCG_GenAI_financial_jobsim"
+name="BCG_GenAI_The_Forage"
 version = "0.1.0"
 description = "Repo where we will implement an AI chatbot trained with financial data obtained through scrapping"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python=">=3.9"
 dependencies = []
 
 [tool.uv.workspace]

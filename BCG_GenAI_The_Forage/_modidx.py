@@ -5,4 +5,5 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://Ramon-PR.github.io',
                 'git_url': 'https://github.com/Ramon-PR/BCG_GenAI_The_Forage',
                 'lib_path': 'BCG_GenAI_The_Forage'},
-  'syms': {'BCG_GenAI_The_Forage.core': {'BCG_GenAI_The_Forage.core.foo': ('core.html#foo', 'BCG_GenAI_The_Forage/core.py')}}}
+  'syms': { 'BCG_GenAI_The_Forage.core': {'BCG_GenAI_The_Forage.core.foo': ('core.html#foo', 'BCG_GenAI_The_Forage/core.py')},
+            'BCG_GenAI_The_Forage.tools': {}}}
